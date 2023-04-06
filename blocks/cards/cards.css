@@ -8,12 +8,24 @@
 }
 
 .cards > ul > li {
+  border-radius: 25px;
+  overflow: hidden;
   border: 1px solid var(--highlight-background-color);
   background-color: var(--background-color)
 }
 
 .cards .cards-card-body {
-  margin: 16px;
+  margin: 6px;
+  float: left;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.cards .cards-card-body.right {
+  margin: 6px;
+  float: right;
+  line-height: 25px;
+  font-size: 14px;
 }
 
 .cards .cards-card-image {
@@ -24,8 +36,12 @@
   margin-top: 0;
 }
 
-.cards > ul > li img {
+.cards > ul > li > .cards-card-image  img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.cards {
+	  border-radius: 25px;
 }
